@@ -1,13 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        Animal animal = new Cat();
-        Animal animal1 = new Dog();
-        animal.say();
-        animal1.say();
-        try{
-            Cat cat = (Cat) animal1;
-        }catch(ClassCastException e){
+        Cat cat = new Cat();
+        Dog dog = new Dog();
+        Animal animal = new Dog();
+        animalSay(cat);
+        animalSay(dog);
+        try {
+            Cat cat1 = (Cat) animal;
+        } catch (ClassCastException e) {
             System.out.println("Error");
         }
+    }
+    public static void animalSay(Animal animal){
+        animal.say();
     }
 }
