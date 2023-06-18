@@ -16,4 +16,3 @@ public class Main {
     public static void animalSay(Animal animal) {
         animal.say();
     }
-}
