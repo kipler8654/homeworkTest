@@ -7,8 +7,7 @@ public class Main {
         animalSay(dog);
         try {
             Cat cat1 = (Cat) animal;
-        }
-        catch (ClassCastException e) {
+        } catch (ClassCastException e) {
             System.out.println("Error");
         }
     }
